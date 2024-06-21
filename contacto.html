@@ -1,0 +1,46 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+<style>
+        body {
+            background-image: url('101.gif');
+            background-size: cover; /* Esto hace que el GIF cubra todo el fondo */
+        }
+    </style>
+
+</head>
+<body>
+    <h2>Contact Form</h2>
+    <form action="/submit-your-form-handler" method="post" enctype="multipart/form-data">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="phone">Phone:</label><br>
+        <input type="tel" id="phone" name="phone"><br><br>
+
+        <label for="age">Age:</label><br>
+        <input type="number" id="age" name="age"><br><br>
+
+        <label for="gender">Gender:</label><br>
+        <select id="gender" name="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="prefer-not-to-say">Prefer not to say</option>
+        </select><br><br>
+
+        <label for="comments">Comments:</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+
+        <label for="file">Upload File:</label><br>
+        <input type="file" id="file" name="file"><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+    <p><a href="index.html">Back to Homepage</a></p>
+</body>
+</html>
